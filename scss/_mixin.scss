@@ -1,0 +1,41 @@
+@mixin sizecon ($max, $width) {
+    max-width: $max;
+    width: $width;
+}
+@mixin flex ($flex, $just, $align) {
+    display: $flex;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin columcent ($flex,$fdirect) {
+    display: $flex;
+    flex-direction: $fdirect;   
+}
+@mixin bgimage ($size:cover,$rep:no-repeat,$pos:center) {
+    
+    background-size: $size;
+    background-repeat: $rep;
+    background-position: $pos;
+}
+@mixin fontstyle ($size,$fam,$weight,$col) {
+    font-size: $size;
+    font-family: $fam;
+    font-weight: $weight;
+    color: $col;
+}
+@mixin cont ($width:70%, $marg:0 auto){
+    width: $width;
+    margin: $marg;
+}
+@mixin wh ($wid,$hei) {
+    width: $wid;
+    height: $hei;
+}
+@mixin column($felx:flex, $colum:column) {
+    display: $felx;
+    flex-direction: $colum;
+}
+@mixin iconstyle ($color:$fontcolor,$size:20px) {
+    color: $color;
+    font-size: $size;
+}
