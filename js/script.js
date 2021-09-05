@@ -59,3 +59,47 @@ $('.center').slick({
       }
     ]
   });
+
+  // blog
+  const rawcard = document.getElementById('Raw-card');
+  const rawcard1 = document.getElementById('Card1');
+  const rawcard2 = document.getElementById('Card2');
+  const rawcard3 = document.getElementById('Card3');
+  const rawcard4 = document.getElementById('Card4');
+  const rawcard5 = document.getElementById('Card5');
+
+  rawcard1.addEventListener('mouseover', ()=>{
+    rawcard.style.backgroundImage = 'url(images/outdoormeditation.jpg)';
+  }, false);  
+  rawcard1.addEventListener('mouseout', ()=>{
+    rawcard.style.backgroundImage = '';
+  }, false);  
+ 
+  rawcard2.addEventListener('mouseover', ()=>{
+    rawcard.style.backgroundImage = 'url(images/intervaln.jpg)';
+  }, false);  
+  rawcard1.addEventListener('mouseout', ()=>{
+    rawcard.style.backgroundImage = '';
+  }, false);  
+
+  rawcard3.addEventListener('mouseover', ()=>{
+    rawcard.style.backgroundImage = 'url(images/pranayamas.jpg)';
+  }, false);  
+  rawcard1.addEventListener('mouseout', ()=>{
+    rawcard.style.backgroundImage = '';
+  }, false); 
+
+  rawcard4.addEventListener('mouseover', ()=>{
+    rawcard.style.backgroundImage = 'url(images/chakras.jpg)';
+  }, false);  
+  rawcard1.addEventListener('mouseout', ()=>{
+    rawcard.style.backgroundImage = '';
+  }, false); 
+
+  rawcard5.addEventListener('mouseover', ()=>{
+    rawcard.style.backgroundImage = 'url(images/card5.jpg)';
+  }, false);  
+  rawcard1.addEventListener('mouseout', ()=>{
+    rawcard.style.backgroundImage = '';
+  }, false); 
+

@@ -392,6 +392,22 @@ a {
   line-height: 20px;
 }
 
+.underline {
+  width: 100%;
+  height: 1px;
+  background-color: #ffcc80;
+  margin-top: 15px 0 50px;
+}
+
+.mandala {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 100px;
+}
+.mandala .mandala-image {
+  height: 100px;
+}
+
 .about {
   margin-top: 200px;
 }
@@ -406,16 +422,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about-container .about-title {
-  font-size: 20px;
-  color: #ff944d;
-}
-.about-container .underline {
-  width: 100px;
-  height: 3px;
-  background-color: #ffb366;
-  margin: 15px 0 100px;
-}
 .about-container .size {
   width: 100%;
   display: -webkit-box;
@@ -427,6 +433,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.about-container .size:hover {
+  border-bottom: 2px #ffb366 solid;
+  border-radius: 20% 25px 25px 20%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .about-container .size .studio-image-block {
   width: 300px;
@@ -474,7 +486,7 @@ a {
   color: #ff944d;
   margin: 50px;
 }
-.about-container .size div a {
+.about-container .size div .about-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,10 +507,10 @@ a {
   margin-top: 13px;
   margin-bottom: 50px;
 }
-.about-container .size div a:hover {
+.about-container .size div .about-button:hover {
   background-color: #ff944d;
 }
-.about-container .size div a .button-icon {
+.about-container .size div .about-button .button-icon {
   height: 30px;
 }
 .about-container .trainer {
@@ -523,7 +535,7 @@ a {
 .classes-container h3 {
   font-size: 30px;
   color: #ffb366;
-  margin: 30px 0;
+  margin: 0 0 30px;
 }
 .classes-container h3::before {
   background-image: url("../images/lotus1.png");
@@ -572,6 +584,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.classes-container .slider .item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .classes-container .slider .item img {
   height: 200px;
@@ -615,4 +633,98 @@ a {
 .classes-container .slider .slick-dots li button:before {
   color: #ff944d;
   font-size: 20px;
+}
+
+.Blog {
+  margin-top: 200px;
+}
+.Blog-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.Blog-container .raw-card {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../images/meditation.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.Blog-container .raw-card .raw {
+  width: 20%;
+  height: 80vh;
+  border-right: 2px solid #ffb366;
+  position: relative;
+}
+.Blog-container .raw-card .raw:hover div {
+  height: 200px;
+  background-color: #fff;
+}
+.Blog-container .raw-card .raw div {
+  height: 0;
+  background-color: #fff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  text-align: center;
+}
+.Blog-container .raw-card .raw div a {
+  font-size: 30px;
+  color: #ff944d;
+}
+.Blog-container .raw-card .raw div a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.Blog .blog-butt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffb366;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 13px;
+  margin-bottom: 50px;
+  margin: 50px auto;
+}
+.Blog .blog-butt:hover {
+  background-color: #ff944d;
+}
+.Blog .blog-butt .button-icon {
+  height: 30px;
 }/*# sourceMappingURL=global.css.map */

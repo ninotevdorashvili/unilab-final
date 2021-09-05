@@ -341,24 +341,46 @@
     }
 }
 // section-3-styles
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: $yell;
+    // margin: 15px 0 100px;
+    margin-top: 15px 0 50px;
+}
+.mandala{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 100px;
+    .mandala-image{
+        height: 100px;
+    }
+}
 .about{
     margin-top: 200px;
     &-container{
         @include cont;
         @include column;
-        .about-title{
-            font-size: 20px;
-            color: $darkyell;
-        }
-        .underline{
-            width: 100px;
-            height: 3px;
-            background-color: $orang;
-            margin: 15px 0 100px;
-        }
+        // .about-title{
+        //     font-size: 20px;
+        //     color: $darkyell;
+        // }
+        // .underline{
+        //     width: 100%;
+        //     height: 3px;
+        //     background-color: $orang;
+        //     margin: 15px 0 100px;
+        // }
         .size {
             width: 100%;
             @include flex (flex,space-between,center);
+            // border: 2px $darkyell solid ;
+            // border-radius: 20% 25px 25px 20%;
+            &:hover{
+                border-bottom: 2px $orang solid ;
+                border-radius: 20% 25px 25px 20%;
+                transform: scale(1.1);
+            }
             .studio-image-block {
                 width: 300px;
                 height: 300px;
@@ -395,7 +417,7 @@
                     color: $darkyell;
                     margin: 50px;
                 }
-                a{
+                .about-button{
                     @include flex (flex,center,center);
                     background-color: $orang;
                     // opacity: 0.7;
@@ -432,7 +454,7 @@
         h3{
             font-size: 30px;
             color: $orang;
-            margin: 30px 0;
+            margin: 0 0 30px;
             &::before{
                 background-image: url('../images/lotus1.png');
                 background-size: 40px 40px;
@@ -469,6 +491,10 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                transition: all 0.4s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
                 img{
                     height: 200px;
                     border: 2px $darkyell solid ;
@@ -509,3 +535,80 @@
         }
     }
 }
+// section-5-styles
+.Blog{
+    margin-top: 200px;
+    &-container{
+        @include cont;
+        .raw-card{
+            width: 100%;
+            height: 80vh;
+            background-image: url('../images/meditation.jpg');
+            @include bgimage (cover, no-repeat, center);
+            @include flex(flex,space-between,center);
+            transition: all .4s ease;
+            .raw{
+                width: 20%;
+                height: 80vh;
+                border-right: 2px solid $orang;
+                position: relative;
+                &:hover {
+                    div{
+                        height: 200px;
+                        background-color: #fff;
+                    }
+                }
+                div{
+                    height: 0;
+                    background-color: #fff;
+                    transition: all .4s ease;
+                    @include flex (flex,center,center);
+                    margin-top: 100px;
+                    text-align: center;
+                    a{
+                        font-size: 30px;
+                        color: $darkyell;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .blog-butt{
+        @include flex (flex,center,center);
+        background-color: $orang;
+        // opacity: 0.7;
+        transition: 0.5s;
+        border-radius: 25px ;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 13px;
+        margin-bottom: 50px;
+        margin: 50px auto;
+        &:hover{
+            // opacity: 1;
+            background-color: $darkyell;
+        }
+        .button-icon{
+            height: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
