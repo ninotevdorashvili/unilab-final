@@ -17,3 +17,45 @@ link.classList.toggle("fade");
 //Hamburger Animation
 hamburger.classList.toggle("toggle");
 });
+
+// header-scroll-effect
+const header = document.querySelector(".header");
+
+window.onscroll=function(){
+    let top=window.scrollY;
+    console.log(top);
+    if(top >=100){
+        header.classList.add("bg-active")
+    }else {
+        header.classList.remove("bg-active");
+    }
+}
+
+// slick-slider
+$('.center').slick({
+    centerMode: true,
+    centerPadding: '30px',
+    slidesToShow: 3,
+    arrows: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });

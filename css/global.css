@@ -60,7 +60,6 @@ a {
       justify-content: space-around;
   height: 12vh;
   width: 100vw;
-  background-color: #fff;
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -188,7 +187,7 @@ a {
   display: block;
   height: 3px;
   width: 0%;
-  background-color: #fff;
+  background-color: #ff944d;
   position: absolute;
   top: 4px;
   -webkit-transition: all ease-in-out 250ms;
@@ -198,6 +197,11 @@ a {
 .header nav .nav-links li a:hover::before {
   width: 80%;
 }
+.header nav .nav-links li .fa-caret-down {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #ff944d;
+}
 .header nav .nav-links .fade {
   opacity: 1;
 }
@@ -205,4 +209,410 @@ a {
   clip-path: circle(1400px at 90% -10%);
   -webkit-clip-path: circle(1400px at 90% -10%);
   pointer-events: all;
+}
+
+.bg-active {
+  background-color: #fff;
+}
+
+.home {
+  background-image: url("../images/mainimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.home-text {
+  width: 70%;
+  height: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home-text div p {
+  color: #ffb366;
+  font-size: 80px;
+}
+.home .inner-flow {
+  width: 200px;
+  height: 100px;
+  font-size: 16px;
+  color: #ff944d;
+  text-align: center;
+  line-height: 20px;
+}
+.home a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffb366;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 13px;
+  margin-bottom: 50px;
+}
+.home a:hover {
+  background-color: #ff944d;
+}
+.home a .button-icon {
+  height: 30px;
+}
+
+.under-home-container {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.under-home-container .under-home-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.under-home-container .under-home-title-1 {
+  color: #ffb366;
+  font-size: 30px;
+  margin: 100px 0;
+}
+.under-home-container .under-home-title-1::before {
+  background-image: url("../images/lotus1.png");
+  background-size: 40px 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  content: "";
+  margin-right: 10px;
+}
+.under-home-container .under-home-title-2 {
+  color: #ff944d;
+  font-size: 40px;
+}
+.under-home-container .under-home-title-2::before {
+  background-image: url("../images/lotus1.png");
+  background-size: 40px 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  content: "";
+  margin-right: 10px;
+}
+.under-home-container .under-home-blocks {
+  margin-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.under-home-container .under-home-blocks div {
+  max-width: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.under-home-container .under-home-blocks div img {
+  height: 100px;
+}
+.under-home-container .under-home-blocks div h4 {
+  color: #ffb366;
+  font-size: 25px;
+  margin: 15px 0;
+}
+.under-home-container .under-home-blocks div p {
+  color: #ff944d;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.about {
+  margin-top: 200px;
+}
+.about-container {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-container .about-title {
+  font-size: 20px;
+  color: #ff944d;
+}
+.about-container .underline {
+  width: 100px;
+  height: 3px;
+  background-color: #ffb366;
+  margin: 15px 0 100px;
+}
+.about-container .size {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-container .size .studio-image-block {
+  width: 300px;
+  height: 300px;
+}
+.about-container .size .studio-image-block .about-image {
+  border: 2px #ff944d solid;
+  border-radius: 50%;
+  height: 300px;
+}
+.about-container .size div {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-container .size div h3 {
+  font-size: 30px;
+  color: #ffb366;
+}
+.about-container .size div h3::before {
+  background-image: url("../images/lotus1.png");
+  background-size: 40px 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  content: "";
+  margin-right: 10px;
+}
+.about-container .size div p {
+  font-size: 16px;
+  color: #ff944d;
+  margin: 50px;
+}
+.about-container .size div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffb366;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 13px;
+  margin-bottom: 50px;
+}
+.about-container .size div a:hover {
+  background-color: #ff944d;
+}
+.about-container .size div a .button-icon {
+  height: 30px;
+}
+.about-container .trainer {
+  margin-top: 50px;
+}
+
+.classes {
+  margin-top: 300px;
+}
+.classes-container {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.classes-container h3 {
+  font-size: 30px;
+  color: #ffb366;
+  margin: 30px 0;
+}
+.classes-container h3::before {
+  background-image: url("../images/lotus1.png");
+  background-size: 40px 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  content: "";
+  margin-right: 10px;
+}
+.classes-container p {
+  color: #ff944d;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+.classes-container p::before {
+  background-image: url("../images/lotus1.png");
+  background-size: 40px 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  content: "";
+  margin-right: 10px;
+}
+.classes-container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.classes-container .slider .item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.classes-container .slider .item img {
+  height: 200px;
+  border: 2px #ff944d solid;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.classes-container .slider .item .outdoorimage {
+  width: 200px;
+}
+.classes-container .slider .item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.classes-container .slider .item a h4 {
+  color: #ff944d;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.classes-container .slider .slick-prev:before,
+.classes-container .slider .slick-next:before {
+  color: #ff944d;
+  font-size: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.classes-container .slider .slick-dots li button:before {
+  color: #ff944d;
+  font-size: 20px;
 }/*# sourceMappingURL=global.css.map */

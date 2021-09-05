@@ -133,7 +133,7 @@
         }
         height: 12vh;
         width: 100vw;
-        background-color: #fff;
+        // background-color: #fff;
         box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
         display: flex;
         position: fixed;
@@ -155,12 +155,15 @@
             // background-color: aqua;
             justify-content: space-evenly;
             align-items: center;
-            // .logo2{
-            //     height: 70px;
-            //     position: absolute;
-            //     top: 10%;
-            //     left: 10px;
-            //     transform: translateY(-90%);
+            // .respons-logo{
+            //     display: none;
+            //     .logo2{
+            //         height: 70px;
+            //         position: absolute;
+            //         top: 10%;
+            //         left: 10px;
+            //         transform: translateY(-90%);
+            //     }
             // }
             li {
                 @media (max-width:800px){
@@ -188,7 +191,7 @@
                         display: block;
                         height: 3px;
                         width: 0%;
-                        background-color: #fff;
+                        background-color: $darkyell;
                         position: absolute;
                         top: 4px;
                         transition: all ease-in-out 250ms;
@@ -199,6 +202,11 @@
                             width: 80%;
                         }
                     }
+                }
+                .fa-caret-down{
+                    font-size: 20px;
+                    margin-left: 5px;
+                    color: $darkyell;
                 }
             }
             .fade{
@@ -211,5 +219,293 @@
             pointer-events: all;
         }
     }
+}
+.bg-active{
+    background-color: #fff;
+}
 
+// section-1-styles
+.home{
+    background-image: url('../images/mainimage.jpg');
+    @include bgimage (cover, no-repeat, center);
+    height: 100vh;
+    width: 100%;
+    @include flex (flex,flex-end,center);
+    flex-direction: column;
+    &-text{
+        width: 70%;
+        height: 300px;
+        margin: 0 auto;
+        @include flex (flex, space-between,center);
+        div{
+            p{
+                color: $orang;
+                font-size: 80px;
+            }
+        }
+    }
+    .inner-flow{
+        width: 200px;
+        height: 100px;
+        font-size: 16px;
+        color: $darkyell;
+        text-align: center;
+        line-height: 20px;
+    }
+    a{
+        @include flex (flex,center,center);
+        background-color: $orang;
+        // opacity: 0.7;
+        transition: 0.5s;
+        border-radius: 25px ;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 13px;
+        margin-bottom: 50px;
+        &:hover{
+            // opacity: 1;
+            background-color: $darkyell;
+        }
+        .button-icon{
+            height: 30px;
+        }
+    }
+}
+// section-2-styles
+.under-home{
+    &-container{
+        @include cont;
+        @include column;
+        .under-home-title{
+            width: 100%;
+            @include flex (flex,center,center);
+            flex-direction: column;
+            text-align: center;
+            &-1{
+                color: $orang;
+                font-size: 30px;
+                margin: 100px 0;
+                &::before{
+                    background-image: url('../images/lotus1.png');
+                    background-size: 40px 40px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 40px; 
+                    height: 40px;
+                    content:'';
+                    margin-right: 10px;
+                }
+            }
+            &-2{
+                color: $darkyell;
+                font-size: 40px;
+                &::before{
+                    background-image: url('../images/lotus1.png');
+                    background-size: 40px 40px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 40px; 
+                    height: 40px;
+                    content:'';
+                    margin-right: 10px;
+                }
+            }
+        }
+        .under-home-blocks{
+            margin-top: 100px;
+            width: 100%;
+            @include flex (flex,space-between,center);
+            div{
+                @include sizecon (300px, 100%);
+                @include flex (flex,center,center);
+                flex-direction: column;
+                text-align: center;
+                img{
+                    height: 100px;
+                }
+                h4{
+                    color: $orang;
+                    font-size: 25px;
+                    margin: 15px 0;
+                }
+                p{
+                    color: $darkyell;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+            }
+        }
+    }
+}
+// section-3-styles
+.about{
+    margin-top: 200px;
+    &-container{
+        @include cont;
+        @include column;
+        .about-title{
+            font-size: 20px;
+            color: $darkyell;
+        }
+        .underline{
+            width: 100px;
+            height: 3px;
+            background-color: $orang;
+            margin: 15px 0 100px;
+        }
+        .size {
+            width: 100%;
+            @include flex (flex,space-between,center);
+            .studio-image-block {
+                width: 300px;
+                height: 300px;
+                // border: 2px $darkyell solid ;
+                // border-radius: 50px;
+                .about-image{
+                    border: 2px $darkyell solid ;
+                    border-radius: 50%;
+                    height: 300px;
+                }
+            }
+            div{
+                max-width: 500px;
+                width: 100%;
+                text-align: center;
+                @include flex (flex,center,center);
+                flex-direction: column;
+                h3{
+                    font-size: 30px;
+                    color: $orang;
+                    &::before{
+                        background-image: url('../images/lotus1.png');
+                        background-size: 40px 40px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 40px; 
+                        height: 40px;
+                        content:'';
+                        margin-right: 10px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    color: $darkyell;
+                    margin: 50px;
+                }
+                a{
+                    @include flex (flex,center,center);
+                    background-color: $orang;
+                    // opacity: 0.7;
+                    transition: 0.5s;
+                    border-radius: 25px ;
+                    width: 200px;
+                    height: 50px;
+                    font-size: 20px;
+                    color: #fff;
+                    margin-top: 13px;
+                    margin-bottom: 50px;
+                    &:hover{
+                        // opacity: 1;
+                        background-color: $darkyell;
+                    }
+                    .button-icon{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .trainer{
+            margin-top: 50px;
+        }
+    }
+}
+// section-4-style
+.classes{
+    margin-top: 300px;
+    &-container{
+        @include cont;
+        @include column;
+        text-align: center;
+        h3{
+            font-size: 30px;
+            color: $orang;
+            margin: 30px 0;
+            &::before{
+                background-image: url('../images/lotus1.png');
+                background-size: 40px 40px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 40px; 
+                height: 40px;
+                content:'';
+                margin-right: 10px;
+            }
+        }
+        p{
+            color: $darkyell;
+            font-size: 40px;
+            margin-bottom: 100px;
+            &::before{
+                background-image: url('../images/lotus1.png');
+                background-size: 40px 40px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 40px; 
+                height: 40px;
+                content:'';
+                margin-right: 10px;
+            }
+        }
+        .slider{
+            display: flex;
+            .item{
+                position: relative;
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                img{
+                    height: 200px;
+                    border: 2px $darkyell solid ;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    @include flex (flex,center,center);
+                    // flex-direction: column;
+                }
+                .outdoorimage{
+                    width: 200px;
+                }
+                a{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    h4{
+                        color: $darkyell;
+                        font-size: 25px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .slick-prev:before, 
+            .slick-next:before{
+                color: $darkyell;
+                font-size: 50px;
+                transition: 0.5s;
+            }
+            .slick-dots li button:before{
+                color: $darkyell;
+                font-size: 20px;
+            }
+        }
+    }
 }
