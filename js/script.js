@@ -126,7 +126,7 @@ const hideScrollElement = (element) => {
  
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
-    if (elementInView(el, 100)) {
+    if (elementInView(el, 50)) {
       displayScrollElement(el);
     } else {
       hideScrollElement(el);
@@ -135,6 +135,7 @@ const handleScrollAnimation = () => {
 };
 window.addEventListener('scroll', () => {
     handleScrollAnimation();
+    console.log();
 })
 
 
@@ -250,3 +251,4 @@ document.getElementById("myForm").submit();
 document.getElementById('submit').addEventListener('click', function(){
   alert('Submit');
 });
+
