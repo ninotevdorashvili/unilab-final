@@ -52,6 +52,55 @@ a {
   outline: none;
 }
 
+@font-face {
+  font-family: "BPG Ingiri";
+  src: url("../fonts/bpg-ingiri-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-ingiri-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-ingiri-webfont.woff2") format("woff2"), url("../fonts/bpg-ingiri-webfont.woff") format("woff"), url("../fonts/bpg-ingiri-webfont.ttf") format("truetype"), url("../fonts/bpg-ingiri-webfont.svg#bpg_ingiriregular") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "BPG Mrgvlovani Caps";
+  src: url("../fonts/bpg-mrgvlovani-caps-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-mrgvlovani-caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-mrgvlovani-caps-webfont.woff2") format("woff2"), url("../fonts/bpg-mrgvlovani-caps-webfont.woff") format("woff"), url("../fonts/bpg-mrgvlovani-caps-webfont.ttf") format("truetype"), url("../fonts/bpg-mrgvlovani-caps-webfont.svg#bpg_mrgvlovani_capsregular") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "BPG Phone Sans Bold";
+  src: url("../fonts/bpg-phone-sans-bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-phone-sans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-phone-sans-bold-webfont.woff2") format("woff2"), url("../fonts/bpg-phone-sans-bold-webfont.woff") format("woff"), url("../fonts/bpg-phone-sans-bold-webfont.ttf") format("truetype"), url("../fonts/bpg-phone-sans-bold-webfont.svg#bpg_phone_sansbold") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "BPG Phone Sans";
+  src: url("../fonts/bpg-phone-sans-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-phone-sans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-phone-sans-webfont.woff2") format("woff2"), url("../fonts/bpg-phone-sans-webfont.woff") format("woff"), url("../fonts/bpg-phone-sans-webfont.ttf") format("truetype"), url("../fonts/bpg-phone-sans-webfont.svg#bpg_phone_sansregular") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "BPG WEB 001 Caps";
+  src: url("../fonts/bpg-web-001-caps-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-web-001-caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-web-001-caps-webfont.woff2") format("woff2"), url("../fonts/bpg-web-001-caps-webfont.woff") format("woff"), url("../fonts/bpg-web-001-caps-webfont.ttf") format("truetype"), url("../fonts/bpg-web-001-caps-webfont.svg#bpg_web_001_capsregular") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "BPG WEB 001";
+  src: url("../fonts/bpg-web-001-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-web-001-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-web-001-webfont.woff2") format("woff2"), url("../fonts/bpg-web-001-webfont.woff") format("woff"), url("../fonts/bpg-web-001-webfont.ttf") format("truetype"), url("../fonts/bpg-web-001-webfont.svg#bpg_web_001regular") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "BPG Glaho Arial";
+  src: url("../fonts/bpg-glaho-arial-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-glaho-arial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-glaho-arial-webfont.woff2") format("woff2"), url("../fonts/bpg-glaho-arial-webfont.woff") format("woff"), url("../fonts/bpg-glaho-arial-webfont.ttf") format("truetype"), url("../fonts/bpg-glaho-arial-webfont.svg#bpg_glaho_arialregular") format("svg");
+  /* Legacy iOS */
+}
 .scroll {
   opacity: 0;
   -webkit-transition: opacity 500ms;
@@ -103,6 +152,7 @@ a {
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
+  top: 0;
   position: fixed;
   z-index: 10;
 }
@@ -222,7 +272,12 @@ a {
     transition: all 0.5s ease 0.6s;
   }
 }
-.header nav .nav-links li a::before {
+.header nav .nav-links li .menut {
+  font-size: 16px;
+  font-family: "BPG WEB 001";
+  color: #ff944d;
+}
+.header nav .nav-links li .menut::before {
   content: "";
   display: block;
   height: 3px;
@@ -234,7 +289,7 @@ a {
   transition: all ease-in-out 250ms;
   margin: 30% 0 0 0;
 }
-.header nav .nav-links li a:hover::before {
+.header nav .nav-links li .menut:hover::before {
   width: 80%;
 }
 .header nav .nav-links li .fa-caret-down {
@@ -253,6 +308,88 @@ a {
 
 .bg-active {
   background-color: #fff;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  height: auto;
+  margin-top: 30px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content3 {
+  height: auto;
+  margin-top: 30px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content3 a {
+  display: block;
+  margin-bottom: 10px;
+  color: #ff944d;
+  padding: 13px 16px;
+}
+.dropdown-content3 a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.dropdown-content2 {
+  height: auto;
+  margin-top: 30px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content2 a {
+  display: block;
+  color: #ff944d;
+  margin-top: 10px;
+  padding: 13px 16px;
+}
+.dropdown-content2 a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.dropdown-content a {
+  color: #ff944d;
+  margin-top: 10px;
+  padding: 13px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.show {
+  display: block;
 }
 
 .home {
@@ -291,16 +428,18 @@ a {
           align-items: center;
 }
 .home-text div p {
+  font-size: 90px;
+  font-family: "BPG Glaho Arial";
   color: #ffb366;
-  font-size: 80px;
 }
 .home .inner-flow {
   width: 200px;
   height: 100px;
-  font-size: 16px;
-  color: #ff944d;
   text-align: center;
   line-height: 20px;
+  font-size: 18px;
+  font-family: "BPG Glaho Arial";
+  color: #ff944d;
 }
 .home a {
   display: -webkit-box;
@@ -312,19 +451,23 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffb366;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 25px;
   width: 200px;
   height: 50px;
-  font-size: 20px;
-  color: #fff;
   margin-top: 13px;
   margin-bottom: 50px;
+  border: 2px solid #ff944d;
+  font-size: 20px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+  font-weight: 600;
 }
 .home a:hover {
   background-color: #ff944d;
+  border: 1px solid #ffcc80;
+  color: #fff;
 }
 .home a .button-icon {
   height: 30px;
@@ -359,8 +502,9 @@ a {
   text-align: center;
 }
 .under-home-container .under-home-title-1 {
-  color: #ffb366;
   font-size: 30px;
+  font-family: "BPG Glaho Arial";
+  color: #ffb366;
   margin: 100px 0;
 }
 .under-home-container .under-home-title-1::before {
@@ -374,8 +518,11 @@ a {
   margin-right: 10px;
 }
 .under-home-container .under-home-title-2 {
-  color: #ff944d;
   font-size: 40px;
+  font-family: "BPG Glaho Arial";
+  color: #ff944d;
+  letter-spacing: 1px;
+  line-height: 54px;
 }
 .under-home-container .under-home-title-2::before {
   background-image: url("../images/lotus1.png");
@@ -422,13 +569,18 @@ a {
   height: 100px;
 }
 .under-home-container .under-home-blocks div h4 {
+  font-size: 30px;
+  font-family: "BPG Glaho Arial";
   color: #ffb366;
-  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 1px;
   margin: 15px 0;
 }
 .under-home-container .under-home-blocks div p {
-  color: #ff944d;
   font-size: 16px;
+  font-family: "BPG Ingiri";
+  color: black;
+  letter-spacing: 1px;
   line-height: 20px;
 }
 
@@ -477,8 +629,8 @@ a {
 .about-container .size:hover {
   border-bottom: 2px #ffb366 solid;
   border-radius: 20% 25px 25px 20%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 .about-container .size .studio-image-block {
   width: 300px;
@@ -509,7 +661,10 @@ a {
 }
 .about-container .size div h3 {
   font-size: 30px;
+  font-family: "BPG Mrgvlovani Caps";
   color: #ffb366;
+  line-height: 36px;
+  letter-spacing: 1px;
 }
 .about-container .size div h3::before {
   background-image: url("../images/lotus1.png");
@@ -523,8 +678,11 @@ a {
 }
 .about-container .size div p {
   font-size: 16px;
-  color: #ff944d;
-  margin: 50px;
+  font-family: "BPG Ingiri";
+  color: black;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 35px;
 }
 .about-container .size div .about-button {
   display: -webkit-box;
@@ -536,19 +694,23 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffb366;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 25px;
   width: 200px;
   height: 50px;
-  font-size: 20px;
-  color: #fff;
   margin-top: 13px;
   margin-bottom: 50px;
+  border: 2px solid #ff944d;
+  font-size: 20px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+  font-weight: 600;
 }
 .about-container .size div .about-button:hover {
   background-color: #ff944d;
+  border: 1px solid #ffcc80;
+  color: #fff;
 }
 .about-container .size div .about-button .button-icon {
   height: 30px;
@@ -574,7 +736,9 @@ a {
 }
 .classes-container h3 {
   font-size: 30px;
+  font-family: "BPG Glaho Arial";
   color: #ffb366;
+  letter-spacing: 1px;
   margin: 0 0 30px;
 }
 .classes-container h3::before {
@@ -588,8 +752,10 @@ a {
   margin-right: 10px;
 }
 .classes-container p {
-  color: #ff944d;
   font-size: 40px;
+  font-family: "BPG Glaho Arial";
+  color: #ff944d;
+  letter-spacing: 1px;
   margin-bottom: 100px;
 }
 .classes-container p::before {
@@ -659,8 +825,10 @@ a {
   right: 0;
 }
 .classes-container .slider .item a h4 {
-  color: #ff944d;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "BPG Mrgvlovani Caps";
+  color: black;
+  letter-spacing: 1px;
   margin-top: 15px;
 }
 .classes-container .slider .slick-prev:before,
@@ -729,8 +897,12 @@ a {
   text-align: center;
 }
 .Blog-container .raw-card .raw div a {
-  font-size: 30px;
+  font-size: 20px;
+  font-family: "BPG Mrgvlovani Caps";
   color: #ff944d;
+  line-height: 36px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .Blog-container .raw-card .raw div a::before {
   content: "";
@@ -750,20 +922,24 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffb366;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 25px;
   width: 200px;
   height: 50px;
-  font-size: 20px;
-  color: #fff;
   margin-top: 13px;
   margin-bottom: 50px;
   margin: 50px auto;
+  border: 2px solid #ff944d;
+  font-size: 20px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+  font-weight: 600;
 }
 .Blog .blog-butt:hover {
   background-color: #ff944d;
+  border: 1px solid #ffcc80;
+  color: #fff;
 }
 .Blog .blog-butt .button-icon {
   height: 30px;
@@ -772,8 +948,8 @@ a {
 .footer {
   background-color: #ffcc80;
   width: 100%;
-  height: 50vh;
-  padding-top: 20px;
+  height: auto;
+  padding: 20px 0;
 }
 .footer-container {
   width: 70%;
@@ -838,9 +1014,12 @@ a {
           flex-direction: column;
 }
 .footer-container .footer-contact-info .info .footer-info .contact {
-  margin-bottom: 15px;
   font-size: 16px;
-  color: black;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .footer-container .footer-contact-info .footer-icon-line2 {
   width: 250px;
@@ -873,4 +1052,199 @@ a {
 .footer-container .footer-contact-info .footer-icon-line2 a:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.conheader {
+  background-color: #fff;
+}
+
+.Contact {
+  width: 100%;
+  margin-top: 12vh;
+}
+.Contact-container {
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+}
+.Contact-container .Contact-line-1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Contact-container .Contact-line-1 .info-div {
+  background-color: #fff;
+  margin-top: 100px;
+  width: 200px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 25px;
+}
+.Contact-container .Contact-line-1 .info-div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #ff944d;
+  border-radius: 50%;
+}
+.Contact-container .Contact-line-1 .info-div div i {
+  font-size: 40px;
+  color: #fff;
+}
+.Contact-container .Contact-line-1 .info-div a {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.Contact-container .Contact-line-1 .info-div a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.Contact-container .Contact-form {
+  margin: 50px 0;
+}
+.Contact-container .Contact-form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Contact-container .Contact-form .form .inp {
+  width: 500px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ff944d;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: "BPG Ingiri";
+  color: black;
+}
+.Contact-container .Contact-form .form .inp:focus {
+  opacity: 0.8;
+}
+.Contact-container .Contact-form .form .inp::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+}
+.Contact-container .Contact-form .form .inp::-moz-placeholder {
+  font-size: 14px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+}
+.Contact-container .Contact-form .form .inp:-ms-input-placeholder {
+  font-size: 14px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+}
+.Contact-container .Contact-form .form .inp::-ms-input-placeholder {
+  font-size: 14px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+}
+.Contact-container .Contact-form .form .inp::placeholder {
+  font-size: 14px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+}
+.Contact-container .Contact-form .form .message {
+  height: 150px;
+}
+.Contact-container .Contact-form .form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  margin-top: 13px;
+  margin-bottom: 50px;
+  border: 2px solid #ff944d;
+  font-size: 20px;
+  font-family: "BPG Ingiri";
+  color: #ff944d;
+  font-weight: 600;
+}
+.Contact-container .Contact-form .form .submit:hover {
+  background-color: #ff944d;
+  border: 1px solid #ffcc80;
+  color: #fff;
+}
+.Contact-container .Contact-form .form .submit .button-icon {
+  height: 30px;
+}
+.Contact-container .Contact-map {
+  width: 70%;
+  margin: 0 auto;
+  height: 500px;
+  background-color: #ffcc80;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  border: 2px solid #ff944d;
+  border-radius: 25px;
+}
+
+.contact-body {
+  background-image: url("../images/mandala.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
 }/*# sourceMappingURL=global.css.map */

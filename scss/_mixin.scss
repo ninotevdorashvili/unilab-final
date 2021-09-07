@@ -23,6 +23,12 @@
     font-weight: $weight;
     color: $col;
 }
+@mixin fontstyle2 ($size,$fam,$col) {
+    font-size: $size;
+    font-family: $fam;
+    
+    color: $col;
+}
 @mixin cont ($width:70%, $marg:0 auto){
     width: $width;
     margin: $marg;

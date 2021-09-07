@@ -5,31 +5,32 @@
 //     nav.classList.toggle('active');
 // });
 
+// hamburgermenu-animation
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 hamburger.addEventListener('click', ()=>{
-//Animate Links
+
 navLinks.classList.toggle("open");
 links.forEach(link => {
 link.classList.toggle("fade");
 });
-//Hamburger Animation
+
 hamburger.classList.toggle("toggle");
 });
 
 // header-scroll-effect
-const header = document.querySelector(".header");
+// const header = document.querySelector(".header");
 
-window.onscroll=function(){
-    let top=window.scrollY;
-    console.log(top);
-    if(top >=100){
-        header.classList.add("bg-active")
-    }else {
-        header.classList.remove("bg-active");
-    }
-}
+// window.onscroll=function(){
+//     let top=window.scrollY;
+//     console.log(top);
+//     if(top >=100){
+//         header.classList.add("bg-active")
+//     }else {
+//         header.classList.remove("bg-active");
+//     }
+// }
 
 // slick-slider
 $('.center').slick({
@@ -141,10 +142,111 @@ window.addEventListener('scroll', () => {
 // header-scroll
 $(function() {
   $(window).on("scroll", function() {
-      if($(window).scrollTop() > 50) {
-          $(".header").addClass("bg-active");
+      if($(window).scrollTop() > 150) {
+          $(".Header").addClass("bg-active");
       } else {
-         $(".header").removeClass("bg-active");
+         $(".Header").removeClass("bg-active");
       }
   });
+});
+
+// menu-dropdown
+// const dropdown = document.getElementById('down');
+// const Downlist = document.getElementById('downlist');
+// Downlist.style.display='none';
+// dropdown.addEventListener('click', (event)=>{
+//   if(Downlist.style.display == 'none') {
+//     Downlist.style.display = 'block';
+//   } else {
+//     Downlist.style.display = 'none';
+//   }
+// })
+
+// menu-dropdown2
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunctionn() {
+  document.getElementById("myDropdownn").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunctionnn() {
+  document.getElementById("myDropdownnn").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// form
+function validateForm(){
+  let x = document.forms['myForm']['Fname'].value;
+  if (x=='') {
+      alert("Name must be filled out");
+      return false;
+  }
+  let y = document.forms['myForm']['Lname'].value;
+  if (y=='') {
+      alert("Last Name must be filled out");
+      return false;
+  }
+  let z = document.forms['myForm']['email'].value;
+  if (z=='') {
+      alert("E-mail must be filled out");
+      return false;
+  }
+  let massage = document.forms['myForm']['message'].value;
+  if (massage=='') {
+      alert("Enter your message");
+      return false;
+  }
+
+}
+function submitFunction() {
+document.getElementById("myForm").submit();
+}
+
+
+
+
+document.getElementById('submit').addEventListener('click', function(){
+  alert('Submit');
 });

@@ -78,6 +78,8 @@
 // }
 .header{
     width: 100%;
+    // height: auto;
+    // position: fixed;
     nav{
         display: flex;
         justify-content: space-around;
@@ -137,6 +139,7 @@
         // background-color: #fff;
         box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
         display: flex;
+        top: 0;
         position: fixed;
         z-index: 10;
         .nav-links{
@@ -186,7 +189,9 @@
                     }
                 }
                 position: relative;
-                a{
+                .menut{
+                    @include fontstyle2(16px, 'BPG WEB 001', $darkyell);
+                    // letter-spacing: 1px;
                     &::before{
                         content: "";
                         display: block;
@@ -225,6 +230,81 @@
     background-color: #fff;
 }
 
+.dropbtn {
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+//   .dropdown2 {
+//     position: relative;
+//     display: inline-block;
+//   }
+  
+  .dropdown-content {
+    height: auto;
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content3 {
+    height: auto;
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a{
+        display: block;
+        margin-bottom: 10px;
+        color: $darkyell;
+        padding: 13px 16px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+  }
+  .dropdown-content2 {
+    height: auto;
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a{
+        display: block;
+        color: $darkyell;
+        margin-top: 10px;
+        padding: 13px 16px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+  }
+  
+  .dropdown-content a {
+    color: $darkyell;
+    margin-top: 10px;
+    padding: 13px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    transform: scale(1.1);
+  }
+  .show {display:block;}
+
 // section-1-styles
 .home{
     background-image: url('../images/mainimage.jpg');
@@ -240,34 +320,35 @@
         @include flex (flex, space-between,center);
         div{
             p{
-                color: $orang;
-                font-size: 80px;
+                @include fontstyle2(90px,'BPG Glaho Arial',$orang);
+                
             }
         }
     }
     .inner-flow{
         width: 200px;
         height: 100px;
-        font-size: 16px;
-        color: $darkyell;
+        // font-size: 16px;
+        // color: $darkyell;
         text-align: center;
         line-height: 20px;
+        @include fontstyle2(18px,'BPG Glaho Arial',$darkyell);
     }
     a{
         @include flex (flex,center,center);
-        background-color: $orang;
-        // opacity: 0.7;
         transition: 0.5s;
         border-radius: 25px ;
         width: 200px;
         height: 50px;
-        font-size: 20px;
-        color: #fff;
         margin-top: 13px;
         margin-bottom: 50px;
+        border: 2px solid $darkyell;
+        @include fontstyle2(20px,'BPG Ingiri',$darkyell);
+        font-weight: 600;
         &:hover{
-            // opacity: 1;
             background-color: $darkyell;
+            border: 1px solid $yell;
+            color: #fff;
         }
         .button-icon{
             height: 30px;
@@ -285,8 +366,7 @@
             flex-direction: column;
             text-align: center;
             &-1{
-                color: $orang;
-                font-size: 30px;
+                @include fontstyle2(30px,$titlfonts2,$orang);
                 margin: 100px 0;
                 &::before{
                     background-image: url('../images/lotus1.png');
@@ -300,8 +380,9 @@
                 }
             }
             &-2{
-                color: $darkyell;
-                font-size: 40px;
+                @include fontstyle2(40px,$titlfonts2,$darkyell);
+               letter-spacing: 1px;
+               line-height: 54px;
                 &::before{
                     background-image: url('../images/lotus1.png');
                     background-size: 40px 40px;
@@ -327,13 +408,14 @@
                     height: 100px;
                 }
                 h4{
-                    color: $orang;
-                    font-size: 25px;
+                    @include fontstyle2(30px,$titlfonts2,$orang);
+                    line-height: 36px;
+                    letter-spacing: 1px;
                     margin: 15px 0;
                 }
                 p{
-                    color: $darkyell;
-                    font-size: 16px;
+                    @include fontstyle2(16px,$textfont,black);
+                    letter-spacing: 1px;
                     line-height: 20px;
                 }
 
@@ -375,18 +457,14 @@
         .size {
             width: 100%;
             @include flex (flex,space-between,center);
-            // border: 2px $darkyell solid ;
-            // border-radius: 20% 25px 25px 20%;
             &:hover{
                 border-bottom: 2px $orang solid ;
                 border-radius: 20% 25px 25px 20%;
-                transform: scale(1.1);
+                transform: scale(1.5);
             }
             .studio-image-block {
                 width: 300px;
                 height: 300px;
-                // border: 2px $darkyell solid ;
-                // border-radius: 50px;
                 .about-image{
                     border: 2px $darkyell solid ;
                     border-radius: 50%;
@@ -400,8 +478,11 @@
                 @include flex (flex,center,center);
                 flex-direction: column;
                 h3{
-                    font-size: 30px;
-                    color: $orang;
+                    @include fontstyle2(30px,$titlfonts,$orang);
+                    line-height: 36px;
+                    letter-spacing: 1px; 
+                    // font-size: 30px;
+                    // color: $orang;
                     &::before{
                         background-image: url('../images/lotus1.png');
                         background-size: 40px 40px;
@@ -414,25 +495,26 @@
                     }
                 }
                 p{
-                    font-size: 16px;
-                    color: $darkyell;
-                    margin: 50px;
+                    @include fontstyle2(16px,$textfont,black);
+                    line-height: 22px;
+                    letter-spacing: 1px; 
+                    margin: 35px;
                 }
                 .about-button{
                     @include flex (flex,center,center);
-                    background-color: $orang;
-                    // opacity: 0.7;
                     transition: 0.5s;
                     border-radius: 25px ;
                     width: 200px;
                     height: 50px;
-                    font-size: 20px;
-                    color: #fff;
                     margin-top: 13px;
                     margin-bottom: 50px;
+                    border: 2px solid $darkyell;
+                    @include fontstyle2(20px,$textfont,$darkyell);
+                    font-weight: 600;
                     &:hover{
-                        // opacity: 1;
                         background-color: $darkyell;
+                        border: 1px solid $yell;
+                        color: #fff;
                     }
                     .button-icon{
                         height: 30px;
@@ -453,8 +535,8 @@
         @include column;
         text-align: center;
         h3{
-            font-size: 30px;
-            color: $orang;
+            @include fontstyle2(30px,$titlfonts2,$orang);
+            letter-spacing: 1px;
             margin: 0 0 30px;
             &::before{
                 background-image: url('../images/lotus1.png');
@@ -468,8 +550,8 @@
             }
         }
         p{
-            color: $darkyell;
-            font-size: 40px;
+            @include fontstyle2(40px,$titlfonts2,$darkyell);
+            letter-spacing: 1px;
             margin-bottom: 100px;
             &::before{
                 background-image: url('../images/lotus1.png');
@@ -517,8 +599,8 @@
                         right: 0;
                     }
                     h4{
-                        color: $darkyell;
-                        font-size: 25px;
+                        @include fontstyle2(20px,$titlfonts,black);
+                        letter-spacing: 1px;
                         margin-top: 15px;
                     }
                 }
@@ -567,8 +649,10 @@
                     margin-top: 100px;
                     text-align: center;
                     a{
-                        font-size: 30px;
-                        color: $darkyell;
+                        @include fontstyle2(20px,$titlfonts,$darkyell);
+                        line-height: 36px;
+                        letter-spacing: 1px;
+                        font-weight: 600;
                         &::before{
                             content: "";
                             position: absolute;
@@ -585,20 +669,20 @@
     }
     .blog-butt{
         @include flex (flex,center,center);
-        background-color: $orang;
-        // opacity: 0.7;
         transition: 0.5s;
         border-radius: 25px ;
         width: 200px;
         height: 50px;
-        font-size: 20px;
-        color: #fff;
         margin-top: 13px;
         margin-bottom: 50px;
         margin: 50px auto;
+        border: 2px solid $darkyell;
+        @include fontstyle2(20px,$textfont,$darkyell);
+        font-weight: 600;
         &:hover{
-            // opacity: 1;
             background-color: $darkyell;
+            border: 1px solid $yell;
+            color: #fff;
         }
         .button-icon{
             height: 30px;
@@ -608,14 +692,13 @@
 // footer-styles
 .footer{
     background-color: $yell;
-    @include wh (100%, 50vh);
-    padding-top: 20px;
+    @include wh (100%, auto);
+    padding: 20px 0;
     &-container{
         @include cont;
         .footer-underline{
             background-color: #fff;
             @include wh (100%,1px);
-            // margin-top: 50px;
         }
         .footer-mand{
             height: 10px;
@@ -639,9 +722,12 @@
                     width: 150px;
                     @include column;
                     .contact{
+                        @include fontstyle2(16px,$textfont,$darkyell);
                         margin-bottom: 15px;
-                        font-size: 16px;
-                        color: black;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        // font-size: 16px;
+                        // color: black;
                     }
                 }
             }
@@ -667,9 +753,112 @@
     }
 }
 
+// contact-styles
 
-
-
-
-
-
+.conheader{
+    background-color: #fff;
+}
+.Contact{
+    width: 100%;
+    margin-top: 12vh;
+    &-container{
+       @include cont;
+        height: auto;
+        .Contact-line-1{
+            width: 100%;
+            @include flex (flex,space-between,center);
+            .info-div{
+                background-color: #fff;
+                margin-top: 100px;
+                width: 200px;
+                height: 150px;
+                @include column;
+                @include flex (flex,center,center);
+                text-align: center;
+                border-radius: 25px;
+                div{
+                    @include flex (flex,center,center);
+                    width: 60px;
+                    height: 60px;
+                    background-color: $darkyell;
+                    border-radius: 50%;
+                    i{
+                        font-size: 40px;
+                        color: #fff;
+    
+                    }
+                }
+                a{
+                    margin-top: 20px;
+                    @include fontstyle2(20px,$textfont,$darkyell);
+                    font-weight: 600;
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .Contact-form{
+            margin: 50px 0;
+            .form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .inp{
+                    width: 500px;
+                    margin-bottom: 30px;
+                    padding: 10px;
+                    border-radius: 25px;
+                    border: 1px solid $darkyell;
+                    background-color: #fff;
+                    @include fontstyle2 (14px,$textfont,black);
+                    &:focus{
+                        opacity: 0.8;
+                    }
+                    &::placeholder{
+                        @include fontstyle2 (14px,$textfont, $darkyell);
+                    }
+                }
+                .message{
+                    height: 150px;
+                }
+                .submit{
+                    @include flex (flex,center,center);
+                    transition: 0.5s;
+                    border-radius: 25px ;
+                    width: 200px;
+                    height: 50px;
+                    margin-top: 13px;
+                    margin-bottom: 50px;
+                    border: 2px solid $darkyell;
+                    @include fontstyle2(20px,$textfont,$darkyell);
+                    font-weight: 600;
+                    &:hover{
+                        background-color: $darkyell;
+                        border: 1px solid $yell;
+                        color: #fff;
+                    }
+                    .button-icon{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .Contact-map{
+            @include cont;
+            height: 500px;
+            background-color: $yell;
+            @include flex(flex,center,center);
+            margin-bottom: 50px;
+            border: 2px solid $darkyell;
+            border-radius: 25px;
+        }
+    }
+}
+.contact-body {
+    background-image: url('../images/mandala.png');
+    background-attachment: fixed;
+    @include bgimage (cover, no-repeat, center);
+    height: auto;
+}

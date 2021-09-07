@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="Header">
             <a href="#Home"><img class="logo" src="images/yogameditation.svg" alt="yogameditation"></a>
             <div class="hamburger">
                 <div class="line1"></div>
@@ -22,13 +22,29 @@
             </div>
             <ul class="nav-links">
                 <!-- <a class="respons-logo" href="#Home"><img class="logo2" src="images/yoga-1-logo-black-and-white.png" alt="yogameditation"></a> -->
-                <li><a href="#">მთავარი</a></li>
-                <li><a href="#">ჩემს შესახებ</a><i class="fas fa-caret-down"></i></li>
-                <li><a href="#">კლასები</a><i class="fas fa-caret-down"></i></li>
-                <li><a href="#">ბლოგი</a><i class="fas fa-caret-down"></i></li>
-                <li><a href="#">კონტაქტი</a></li>
+                <li><a class="menut" href="#">მთავარი</a></li>
+                <li class="dropdown"><a onclick="myFunction()" class="dropbtn menut" href="#">ჩემს შესახებ</a><i class="fas fa-caret-down"></i><div id="myDropdown" class="dropdown-content">
+                    <a href="#">სტუდია</a>
+                    <a href="#">ტრენერი</a>
+                </div></li>
+                
+                <li class="dropdown" id="down"><a onclick="myFunctionnn()" class="dropbtn menut" href="#">კლასები</a><i class="fas fa-caret-down"></i><div id="myDropdownnn" class="dropdown-content2">
+                    <a href="#">იოგა დამწყებთათვის</a>
+                    <a href="#">ჰატჰა იოგა</a>
+                    <a href="#">ვინიასა იოგა</a>
+                    <a href="#">მედიტაცია</a>
+                    <a href="#">იოგა ღია სივრცეში</a>
+                    <a href="#">ონლაინ იოგა</a>
+                </div></li>
+                <li class="dropdown"><a onclick="myFunctionn()" class="dropbtn menut" href="#">ბლოგი</a><i class="fas fa-caret-down"></i><div id="myDropdownn" class="dropdown-content3">
+                    <a href="#">საკვების კალორიულობა</a>
+                    <a href="#">ფოტოგალერეა</a>
+                    <a href="#">ჟურნალი</a>
+                </div></li>
+                <li><a class="menut" href="contact.html">კონტაქტი</a></li>
             </ul>
         </nav>
+
     </header>
     <section class="home" id="Home">
         <div class="home-text">
@@ -37,7 +53,7 @@
             <div class="home-text-mind"><p>გონება</p></div>
         </div>
         <div class="inner-flow"><p>დაუკავშირდით თქვენს შინაგან ენერგიას</p></div>
-        <a class="main-button" href="#"><img class="button-icon" src="images/guru.png" alt="chakras">დაიწყე ახლავე</a>
+        <a class="main-button" href="contact.html"><img class="button-icon" src="images/guru.png" alt="chakras">დაიწყე ახლავე</a>
     </section>
     <section class="under-home">
         <div class="under-home-container">
@@ -121,8 +137,8 @@
                 <div class="raw card1" id="Card1"><div><a href="">რა არის მედიტაცია?</a></div></div>
                 <div class="raw card2" id="Card2"><div><a href="">ინტერვალური შიმშილი</a></div></div>
                 <div class="raw card3" id="Card3"><div><a href="">პრანაიამა-სარგებელი</a></div></div>
-                <div class="raw card4" id="Card4"><div><a href="">რა არის ჩაკრები</a></div></div>
-                <div class="raw card5" id="Card5"><div><a href="">დღის რომელ მონაკვეთში სჯობს იოგა</a></div></div>
+                <div class="raw card4" id="Card4"><div><a href="">რა არის ჩაკრები?</a></div></div>
+                <div class="raw card5" id="Card5"><div><a href="">დღის რომელ მონაკვეთში სჯობს იოგა?</a></div></div>
             </div>
             <a class="blog-butt scroll" href=""><img class="button-icon" src="images/guru.png" alt="chakras">მეტის ნახვა</a>
         </div>
