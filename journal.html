@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>იოგა-პერსონალური ტრენერი</title>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/slick.css">
     <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/global.css">
@@ -29,18 +30,13 @@
                 </div></li>
                 
                 <li class="dropdown" id="down"><a onclick="myFunctionnn()" class="dropbtn menut" href="#">კლასები</a><i class="fas fa-caret-down"></i><div id="myDropdownnn" class="dropdown-content2">
-                    <a href="#">ყველა კურსი</a>
+                    <a href="classpg.html">ყველა კურსი</a>
                     <a href="#">იოგა დამწყებთათვის</a>
-                    <a href="#">ჰატჰა იოგა</a>
-                    <a href="#">ვინიასა იოგა</a>
-                    <a href="#">მედიტაცია</a>
-                    <a href="#">იოგა ღია სივრცეში</a>
                     <a href="#">ონლაინ იოგა</a>
                 </div></li>
                 <li class="dropdown"><a onclick="myFunctionn()" class="dropbtn menut" href="#">ბლოგი</a><i class="fas fa-caret-down"></i><div id="myDropdownn" class="dropdown-content3">
-                    <a href="#">საკვების კალორიულობა</a>
                     <a href="#">ფოტოგალერეა</a>
-                    <a href="#">ჟურნალი</a>
+                    <a href="journal.html">ჟურნალი</a>
                 </div></li>
                 <li><a class="menut" href="contact.html">კონტაქტი</a></li>
             </ul>
@@ -59,7 +55,7 @@
                         <a href="#"><img class="button-icon" src="images/guru.png" alt="chakras">წაიკითხეთ მეტი</a>
                     </div>
                 </div>
-                <div class="journal-block">
+                <div class="journal-block" data-aos="fade-left">
                     <div class="jimg"><img src="images/intervaln.jpg" alt="interval"></div>
                     <div>
                         <h3>ინტერვალური შიმშილი</h3>
@@ -67,7 +63,7 @@
                         <a href="#"><img class="button-icon" src="images/guru.png" alt="chakras">წაიკითხეთ მეტი</a>
                     </div>
                 </div>
-                <div class="journal-block">
+                <div class="journal-block" data-aos="fade-right">
                     <div class="jimg"><img src="images/pranayamas.jpg" alt="pranayamas"></div>
                     <div>
                         <h3>პრანაიამა-სარგებელი</h3>
@@ -75,7 +71,7 @@
                         <a href="#"><img class="button-icon" src="images/guru.png" alt="chakras">წაიკითხეთ მეტი</a>
                     </div>
                 </div>
-                <div class="journal-block">
+                <div class="journal-block" data-aos="fade-left">
                     <div class="jimg"><img src="images/chakra2.jpg" alt="chakra"></div>
                     <div>
                         <h3>რა არის ჩაკრები</h3>
@@ -83,7 +79,7 @@
                         <a href="#"><img class="button-icon" src="images/guru.png" alt="chakras">წაიკითხეთ მეტი</a>
                     </div>
                 </div>
-                <div class="journal-block">
+                <div class="journal-block" data-aos="fade-right">
                     <div class="jimg"><img src="images/card5.jpg" alt="card5"></div>
                     <div>
                         <h3>დღის რომელ მონაკვეთში სჯობს იოგა?</h3>
@@ -91,7 +87,7 @@
                         <a href="#"><img class="button-icon" src="images/guru.png" alt="chakras">წაიკითხეთ მეტი</a>
                     </div>
                 </div>
-                <div class="journal-block">
+                <div class="journal-block" data-aos="fade-left">
                     <div class="jimg"><img src="images/yogamat1.jpg" alt="yogamat"></div>
                     <div>
                         <h3>როგორ შევარჩიოთ დასაფენი?</h3>
@@ -134,7 +130,13 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 100,
+        duration: 1000
+    });
+  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>

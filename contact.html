@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>იოგა-პერსონალური ტრენერი</title>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/slick.css">
     <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/global.css">
@@ -31,14 +32,9 @@
                 <li class="dropdown" id="down"><a onclick="myFunctionnn()" class="dropbtn menut" href="#">კლასები</a><i class="fas fa-caret-down"></i><div id="myDropdownnn" class="dropdown-content2">
                     <a href="classpg.html">ყველა კურსი</a>
                     <a href="#">იოგა დამწყებთათვის</a>
-                    <a href="#">ჰატჰა იოგა</a>
-                    <a href="#">ვინიასა იოგა</a>
-                    <a href="#">მედიტაცია</a>
-                    <a href="#">იოგა ღია სივრცეში</a>
                     <a href="#">ონლაინ იოგა</a>
                 </div></li>
                 <li class="dropdown"><a onclick="myFunctionn()" class="dropbtn menut" href="#">ბლოგი</a><i class="fas fa-caret-down"></i><div id="myDropdownn" class="dropdown-content3">
-                    <a href="#">საკვების კალორიულობა</a>
                     <a href="#">ფოტოგალერეა</a>
                     <a href="journal.html">ჟურნალი</a>
                 </div></li>
@@ -71,7 +67,7 @@
                     <input class="submit" id="submit" type="submit" onclick="submitFunction()" value="გაგზავნა">
                 </form>
             </div>
-            <div class="Contact-map">
+            <div class="Contact-map" data-aos="fade-up">
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2977.4663296093327!2d44.7963628!3d41.7320334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472b78674d91d%3A0xeb40f9f38cb81f!2s34%2F4%20Tsotne%20Dadiani%20St%2C%20T&#39;bilisi!5e0!3m2!1sru!2sge!4v1630887086331!5m2!1sru!2sge" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -108,7 +104,13 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 100,
+        duration: 1000
+    });
+  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>იოგა-პერსონალური ტრენერი</title>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/slick.css">
     <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/global.css">
@@ -31,10 +32,6 @@
                 <li class="dropdown" id="down"><a onclick="myFunctionnn()" class="dropbtn menut" href="#">კლასები</a><i class="fas fa-caret-down"></i><div id="myDropdownnn" class="dropdown-content2">
                     <a href="#">ყველა კურსი</a>
                     <a href="#">იოგა დამწყებთათვის</a>
-                    <a href="#">ჰატჰა იოგა</a>
-                    <a href="#">ვინიასა იოგა</a>
-                    <a href="#">მედიტაცია</a>
-                    <a href="#">იოგა ღია სივრცეში</a>
                     <a href="#">ონლაინ იოგა</a>
                 </div></li>
                 <li class="dropdown"><a onclick="myFunctionn()" class="dropbtn menut" href="#">ბლოგი</a><i class="fas fa-caret-down"></i><div id="myDropdownn" class="dropdown-content3">
@@ -53,68 +50,80 @@
             <h2>შეინარჩუნეთ ჯანსაღი და ძლიერი სხეული</h2>
             <div class="class-wraper">
                 <div class="class-wraper-line">   
-                    <div>
-                        <img  src="images/hathayoga.jpg" alt="hathayoga">
-                        <h4>ჰატჰა იოგა</h4>
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <p>1 თვიანი ულიმიტო - 70 GEL</p>
-                                <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                               
-                            </div>
-                        </div>    
-                    </div>
-                    <div>
-                        <img src="images/vinyasayoga.jpg" alt="vinyasayoga">
-                        <h4>ვინიასა იოგა</h4>
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <p>1 თვიანი ულიმიტო - 70 GEL</p>
-                                <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                                
-                            </div>
-                        </div>  
-                    </div>
-                    <div>
-                        <img src="images/aerialyogastud.jpg" alt="Aerial">
-                        <h4>"Aerial" იოგა</h4>
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <p>1 თვიანი ულიმიტო - 70 GEL</p>
-                                <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                               
-                            </div>
-                        </div>  
-                    </div>
+                    <div class="block">
+                        <div class="class-block">
+                            <img  src="images/hathayoga.jpg" alt="hathayoga">
+                            <h4>ჰატჰა იოგა</h4>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>1 თვიანი ულიმიტო - 70 GEL</p>
+                                    <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                               
+                                </div>
+                            </div>    
+                        </div>
+                    </div>   
+                    <div class="block">
+                        <div class="class-block">
+                            <img src="images/vinyasayoga.jpg" alt="vinyasayoga">
+                            <h4>ვინიასა იოგა</h4>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>1 თვიანი ულიმიტო - 70 GEL</p>
+                                    <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                                
+                                </div>
+                            </div>  
+                        </div>
+                    </div>  
+                    <div class="block"> 
+                        <div class="class-block">
+                            <img src="images/aerialyogastud.jpg" alt="Aerial">
+                            <h4>"Aerial" იოგა</h4>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>1 თვიანი ულიმიტო - 70 GEL</p>
+                                    <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                               
+                                </div>
+                            </div>  
+                        </div>
+                    </div>    
                 </div>
-                <div class="class-wraper-line">   
-                    <div>
-                        <img src="images/basicyoga.jpg" alt="">
-                        <h4>იოგა დამწყებთათვის</h4>
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <p>1 თვიანი ულიმიტო - 70 GEL</p>
-                                <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                               
-                            </div>
-                        </div>  
+                <div class="class-wraper-line" data-aos="fade-right"> 
+                    <div class="block">
+                        <div class="class-block">
+                            <img src="images/basicyoga.jpg" alt="">
+                            <h4>იოგა დამწყებთათვის</h4>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>1 თვიანი ულიმიტო - 70 GEL</p>
+                                    <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                               
+                                </div>
+                            </div>  
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/meditaciyaclass.jpg" alt="meditaciyaclass">
-                        <h4>მედიტაციის პრაქტიკა</h4>
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <p>1 თვიანი ულიმიტო - 70 GEL</p>
-                                <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                                
-                            </div>
-                        </div>  
+                    <div class="block">
+                        <div class="class-block">
+                            <img src="images/meditaciyaclass.jpg" alt="meditaciyaclass">
+                            <h4>მედიტაციის პრაქტიკა</h4>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>1 თვიანი ულიმიტო - 70 GEL</p>
+                                    <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>                                
+                                </div>
+                            </div>  
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/meditaciya.jpg" alt="meditaciya">
-                        <h4>online იოგა</h4>
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <p>1 თვიანი ულიმიტო - 70 GEL</p>
-                                <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>
-                            </div>
-                        </div>  
-                    </div>
+                    <div class="block">
+                        <div class="class-block">
+                            <img src="images/meditaciya.jpg" alt="meditaciya">
+                            <h4>online იოგა</h4>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <p>1 თვიანი ულიმიტო - 70 GEL</p>
+                                    <p>1 თვიანი 3-ჯერ კვირაში - 50 GEL</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>    
                 </div>    
             </div>
         </div>
@@ -151,7 +160,13 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 100,
+        duration: 1000
+    });
+  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>

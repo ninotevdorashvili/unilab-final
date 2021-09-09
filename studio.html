@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>იოგა-პერსონალური ტრენერი</title>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/slick.css">
     <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/global.css">
@@ -31,10 +32,6 @@
                 <li class="dropdown" id="down"><a onclick="myFunctionnn()" class="dropbtn menut" href="#">კლასები</a><i class="fas fa-caret-down"></i><div id="myDropdownnn" class="dropdown-content2">
                     <a href="classpg.html">ყველა კურსი</a>
                     <a href="#">იოგა დამწყებთათვის</a>
-                    <a href="#">ჰატჰა იოგა</a>
-                    <a href="#">ვინიასა იოგა</a>
-                    <a href="#">მედიტაცია</a>
-                    <a href="#">იოგა ღია სივრცეში</a>
                     <a href="#">ონლაინ იოგა</a>
                 </div></li>
                 <li class="dropdown"><a onclick="myFunctionn()" class="dropbtn menut" href="#">ბლოგი</a><i class="fas fa-caret-down"></i><div id="myDropdownn" class="dropdown-content3">
@@ -46,22 +43,14 @@
             </ul>
         </nav>
     </header>
-    <!-- <section class="Studio">
-        <div class="studio-bg-image"></div>
-        <div class="Studio-container">
-            <div class="Studio-bg-image"></div>
-        </div>
-    </section> -->
-
-
     <section class="module parallax parallax-1">
         <!-- <div class="studio-title" id="studiotitle"><h2 class="title">დარბაზი</h2></div> -->
-        <div class="paralax-container">
+        <div class="paralax-container pc1">
             <div class="underline "></div>
             <div class="mandala"><img class="mandala-image" src="images/mandala.png" alt="mandala"></div>
           <div class="studio-cont">
-            <p class="studio-cont-p1">გარემო, სადაც შეძლებთ სიმშვიდის და ჰარმონიის შეგრძნებას</p>
-            <p class="studio-cont-p2">ჩვენ ვიცავთ დარბაზში სისუფთავის უმაღლეს სტანდარტებს.</p>
+            <p class="studio-cont-p1" data-aos="fade-left">გარემო, სადაც შეძლებთ სიმშვიდის და ჰარმონიის შეგრძნებას</p>
+            <p class="studio-cont-p2" data-aos="fade-right">ჩვენ ვიცავთ დარბაზში სისუფთავის უმაღლეს სტანდარტებს.</p>
           </div>
         </div>
     </section>
@@ -70,11 +59,11 @@
         <div class="paralax-container">
             <div class="underline "></div>
             <div class="mandala"><img class="mandala-image" src="images/mandala.png" alt="mandala"></div>
-          <div class="studio-cont">
+          <div class="studio-cont sc2">
             <div class=" studio-cont-image">
-                <img src="images/class2.jpg" alt="class2">
-                <img src="images/class3.jpg" alt="class3">
-                <img src="images/yoga-class1.jpg" alt="classes">
+                <img data-aos="fade-right" src="images/class2.jpg" alt="class2">
+                <img data-aos="fade-up" src="images/class3.jpg" alt="class3">
+                <img data-aos="fade-left" src="images/yoga-class1.jpg" alt="classes">
             </div>
           </div>
         </div>
@@ -86,16 +75,16 @@
             <div class="mandala"><img class="mandala-image" src="images/mandala.png" alt="mandala"></div>
             <div class="studio-cont3">
                 <div class="aerial-stud">
-                    <h4>"Aerial" იოგას დარბაზი</h4>
+                    <h4 data-aos="fade-right">"Aerial" იოგას დარბაზი</h4>
                     <div class=" studio-cont-image3">
-                        <img src="images/aerialyogastud.jpg" alt="aerial">
-                        <img src="images/aerialyogastudio.jpg" alt="class3">
+                        <img data-aos="fade-left" src="images/aerialyogastud.jpg" alt="aerial">
+                        <img data-aos="fade-left" src="images/aerialyogastudio.jpg" alt="class3">
                     </div>
                 </div>
                 <div class="meditation-stud">
-                    <h4>მედიტაციის ოთახი</h4>
+                    <h4 data-aos="fade-left">მედიტაციის ოთახი</h4>
                     <div class=" studio-cont-image3">
-                        <img src="images/meditationstud.jpg" alt="aerial">
+                        <img data-aos="fade-right" src="images/meditationstud.jpg" alt="aerial">
                     </div>
                 </div>
             </div>
@@ -133,7 +122,13 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 100,
+        duration: 1000
+    });
+  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>

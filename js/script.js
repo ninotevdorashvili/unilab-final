@@ -41,20 +41,38 @@ $('.center').slick({
     dots: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1020,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 732,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 500,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '10px',
           slidesToShow: 1
         }
       }
@@ -135,7 +153,6 @@ const handleScrollAnimation = () => {
 };
 window.addEventListener('scroll', () => {
     handleScrollAnimation();
-    console.log();
 })
 
 
@@ -168,7 +185,7 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -186,7 +203,7 @@ function myFunctionn() {
   document.getElementById("myDropdownn").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content3");
@@ -203,7 +220,7 @@ function myFunctionnn() {
   document.getElementById("myDropdownnn").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content2");
@@ -251,4 +268,3 @@ document.getElementById("myForm").submit();
 document.getElementById('submit').addEventListener('click', function(){
   alert('Submit');
 });
-

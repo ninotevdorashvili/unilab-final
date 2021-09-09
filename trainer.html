@@ -5,8 +5,14 @@
     <meta >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://ninotevdorashvili.github.io/unilab-final/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="იოგა" />
+    <meta property="og:description"        content="პერსონალური ტრენერი" />
+    <meta property="og:image"              content=" %= require('./images/trainerbg') %" />
     <title>იოგა-პერსონალური ტრენერი</title>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/slick.css">
     <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/global.css">
@@ -31,14 +37,9 @@
                 <li class="dropdown" id="down"><a onclick="myFunctionnn()" class="dropbtn menut" href="#">კლასები</a><i class="fas fa-caret-down"></i><div id="myDropdownnn" class="dropdown-content2">
                     <a href="classpg.html">ყველა კურსი</a>
                     <a href="#">იოგა დამწყებთათვის</a>
-                    <a href="#">ჰატჰა იოგა</a>
-                    <a href="#">ვინიასა იოგა</a>
-                    <a href="#">მედიტაცია</a>
-                    <a href="#">იოგა ღია სივრცეში</a>
                     <a href="#">ონლაინ იოგა</a>
                 </div></li>
                 <li class="dropdown"><a onclick="myFunctionn()" class="dropbtn menut" href="#">ბლოგი</a><i class="fas fa-caret-down"></i><div id="myDropdownn" class="dropdown-content3">
-                    <a href="#">საკვების კალორიულობა</a>
                     <a href="#">ფოტოგალერეა</a>
                     <a href="journal.html">ჟურნალი</a>
                 </div></li>
@@ -57,10 +58,10 @@
                 </div>
             </div>
             <div class="trainer-info-line2">
-                <img src="images/trainerbg.jpg" alt="trainer">
-                <img src="images/trainer2.jpg" alt="trainer2">
-                <img src="images/studioyoga.jpg" alt="studioyoga">
-                <img src="images/trainer3.jpg" alt="trainer3">
+                <div data-aos="fade-right"><img src="images/trainerbg.jpg" alt="trainer"></div>
+                <div data-aos="fade-left"><img src="images/trainer2.jpg" alt="trainer2"></div>
+                <div data-aos="fade-right"><img src="images/studioyoga.jpg" alt="studioyoga"></div>
+                <div data-aos="fade-left"><img src="images/trainer3.jpg" alt="trainer3"></div>
             </div>
         </div>
     </section>
@@ -96,7 +97,13 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 100,
+        duration: 1000
+    });
+  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
