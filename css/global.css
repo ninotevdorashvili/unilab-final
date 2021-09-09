@@ -1677,6 +1677,11 @@ a {
   border-radius: 50%;
   height: 200px;
 }
+@media (max-width: 350px) {
+  .parallax .pc3 .studio-cont3 .meditation-stud .studio-cont-image3 img {
+    height: 150px;
+  }
+}
 
 .parallax-1 {
   margin-top: 12vh;
