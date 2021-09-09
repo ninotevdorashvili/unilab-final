@@ -1480,6 +1480,7 @@ a {
   .parallax .paralax-container {
     margin-top: 500px;
     margin-bottom: 500px;
+    overflow: auto;
   }
 }
 .parallax .paralax-container .studio-cont {
