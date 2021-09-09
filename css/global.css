@@ -477,6 +477,11 @@ a {
     font-size: 60px;
   }
 }
+@media (max-width: 500px) {
+  .home-text div p {
+    font-size: 35px;
+  }
+}
 .home .inner-flow {
   width: 200px;
   height: 100px;

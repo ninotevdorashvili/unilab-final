@@ -274,6 +274,9 @@
                 @media(max-width:610px){
                     font-size: 60px;
                 }
+                @media(max-width:500px){
+                    font-size: 35px;
+                }
                 @include fontstyle2(90px,'BPG Glaho Arial',$orang);
                 
             }
