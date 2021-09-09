@@ -1030,6 +1030,9 @@
                     margin-bottom: 70px;
                     flex-wrap: wrap;
                     img{
+                        @media(max-width:350px){
+                            height: 150px;
+                        }
                         border: 2px solid $darkyell;
                         border-radius: 50%;
                         height: 200px;

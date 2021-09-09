@@ -1635,6 +1635,11 @@ a {
   border-radius: 50%;
   height: 200px;
 }
+@media (max-width: 350px) {
+  .parallax .pc3 .studio-cont3 .aerial-stud .studio-cont-image3 img {
+    height: 150px;
+  }
+}
 .parallax .pc3 .studio-cont3 .meditation-stud {
   text-align: center;
   display: -webkit-box;
