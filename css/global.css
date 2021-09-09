@@ -515,6 +515,11 @@ a {
   color: #ff944d;
   font-weight: 600;
 }
+@media (max-width: 360px) {
+  .home a {
+    margin-bottom: 30px;
+  }
+}
 .home a:hover {
   background-color: #ff944d;
   border: 1px solid #ffcc80;
@@ -1480,7 +1485,6 @@ a {
   .parallax .paralax-container {
     margin-top: 500px;
     margin-bottom: 500px;
-    overflow: scroll;
   }
 }
 .parallax .paralax-container .studio-cont {
