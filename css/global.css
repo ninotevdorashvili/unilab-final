@@ -460,6 +460,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 150px;
   }
 }
 .home-text div p {
