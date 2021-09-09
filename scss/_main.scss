@@ -1106,6 +1106,9 @@
             }
         }
         .trainer-info-line2{
+            @media(max-width:1024px){
+                justify-content: center;
+            }
             @include flex(flex,space-between,center);
             flex-wrap: wrap;
             div{

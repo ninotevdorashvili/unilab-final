@@ -1758,6 +1758,13 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 1024px) {
+  .Trainer-container .trainer-info-line2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .Trainer-container .trainer-info-line2 div {
   width: 400px;
   height: 300px;
