@@ -1004,6 +1004,10 @@
             margin-bottom: 300px;
             // margin-top: 500px;
         }
+        @media(max-width:390px){
+            margin-bottom: 200px;
+            
+        }
         margin-bottom: 100px;
         .studio-cont3{
             @media(max-width:1330px){
