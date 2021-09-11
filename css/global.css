@@ -1567,6 +1567,11 @@ a {
     height: 150px;
   }
 }
+@media (max-width: 375px) {
+  .parallax .pc1 {
+    display: none;
+  }
+}
 .parallax .pc3 {
   margin-bottom: 100px;
 }

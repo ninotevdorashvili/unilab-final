@@ -994,11 +994,11 @@
             }
         }
     }
-    // .pc1{
-    //     @media(max-width:375px){
-    //         margin-top: 200px;
-    //     }
-    // }
+    .pc1{
+        @media(max-width:375px){
+            display: none;
+        }
+    }
     .pc3{
         @media(max-width:870px){
             margin-bottom: 300px;
